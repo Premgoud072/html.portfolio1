@@ -1,0 +1,239 @@
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+<style>
+   body {
+  font-family: Questrial;
+  margin: 0;
+  width:100%;
+  
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: darkmagenta;
+  margin: 0; 
+  padding: 0; 
+}
+
+.navbar img {
+  float: left;
+  font-size: 12px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 14px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: darkmagenta;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:darkmagenta;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  font-size: 14px;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.dropdown-content a:hover {
+  background-color: pink;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+ 
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.slideshow-container img {
+  display: block;
+  margin: auto;
+}
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+footer {
+  width: 100%;
+  text-align: center;
+  padding: 3px;
+  background-color: darkmagenta;
+  color:rgb(252, 252, 252);
+}
+.img{
+  width:30%;
+}
+</style>
+
+
+</head>
+<body>
+
+<img style="width:24%;" src="\Users\Prem\OneDrive\Desktop\premice cream.png">  
+<img style="width:24%;" src="C:\Users\Prem\OneDrive\Desktop\image10.png">
+<img style="width:25%;" src="C:\Users\Prem\OneDrive\Desktop\image11.png">
+<img style="width:25%;" src="C:\Users\Prem\OneDrive\Desktop\image13.png">
+
+
+
+<h1 style="color:red; font-size:50px; text-align:center;"><marquee>A New Adventure in Prem ice Creams</marquee></h1>
+
+<p style="font-size:20px; text-align:center; line-height: 150%;">we belive that simple nature food tastes best.<br>our ice cream is lovingly handmade in small batches in the <br>heart usig onlysimple,local ingredients of adventure and discovery.</p></p>
+<div class= "navbar">
+      <div class="dropdown">
+            <button class="dropbtn">Scoopes</button>
+            <div class="dropdown-content">
+                <a href="#">vanilla</a>
+                <a href="#">peanut </a>
+                <a href="#">straberry</a>
+             </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">juices</button>
+            <div class="dropdown-content">
+                <a href="home1.html">apple</a>
+                <a href="#">mango </a>
+                <a href="#">orange</a>
+             </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Cone ice creams</button>
+            <div class="dropdown-content">
+                <a href="#">chocolate</a>
+                <a href="#">mango</a>
+                <a href="#">straberry with cherries</a>
+             </div>
+        </div>
+</div>
+<div class="slideshow-container">
+
+
+
+<div class="mySlides fade">
+    <img src="C:\Users\Prem\OneDrive\Desktop\image01.png.webp"  style="width:50%;  height=50%">
+    </div>
+    <div class="mySlides fade">
+    <img src= "C:\Users\Prem\OneDrive\Desktop\image02.png.webp" style="width:50%;  height=50% ">
+    </div>
+    <div class="mySlides fade">
+    <img src="C:\Users\Prem\OneDrive\Desktop\image03.png.webp"  style="width:50%; height=50%">
+
+  </div>
+  <div class="mySlides fade">
+  <img src="C:\Users\Prem\OneDrive\Desktop\image04.png"  style="width:50%; height=50%">
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+</div>
+<footer>
+  <p> <marquee>please book before one day for event orders</marquee><br>
+  <a href="premgoud072@gmail.com">premgoud072@gmail.com</a></p>
+</footer>
+<script>
+    let slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+    </script>
+    
+</body>
+</html>
+
+
+
+
+
